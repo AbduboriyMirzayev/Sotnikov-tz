@@ -7,11 +7,11 @@ import { changeActivePath } from "store/reducers/navigation";
 
 function Sidebar() {
   const { pathname } = useLocation();
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
-  const onPathChanged = (path: string) => {
-    dispatch(changeActivePath(path));
-  };
+  // const onPathChanged = (path: string) => {
+  //   dispatch(changeActivePath(path));
+  // };
 
   return (
     <Style>
@@ -26,7 +26,7 @@ function Sidebar() {
                     isRouteActive && "header__link--active"
                   }`}
                   to={route.path}
-                  onClick={() => onPathChanged(route.path)}
+                  // onClick={() => onPathChanged(route.path)}
                 >
                   {route.icon}
                   <span className="header__link-text">{route.title}</span>

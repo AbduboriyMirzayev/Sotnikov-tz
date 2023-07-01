@@ -1,8 +1,8 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import navigation from "./navigation";
+import conversion from "./conversion";
 
 const reducer = combineReducers({
-  navigation: navigation,
+  conversion,
 });
 
 export default reducer;

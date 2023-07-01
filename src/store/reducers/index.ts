@@ -1,10 +1,8 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import navigation from "./navigation";
-import pagination from "./pagination";
+import conversion from "./conversion";
 
 const reducer = combineReducers({
-  navigation: navigation,
-  pagination: pagination,
+  conversion,
 });
 
 export default reducer;
